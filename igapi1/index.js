@@ -1,12 +1,14 @@
 // 150/month
 const axios = require("axios");
+require('dotenv').config()
 
+const key = process.env.KEY
 const options = {
   method: 'GET',
   url: 'https://instagram-bulk-profile-scrapper.p.rapidapi.com/clients/api/ig/ig_profile',
   params: {ig: 'lifeofsoumya', response_type: 'short', corsEnabled: 'false'},
   headers: {
-    'X-RapidAPI-Key': '6d3f3b728amsh2d4bde72eb2b03ep1e50f9jsnafa25071e021',
+    'X-RapidAPI-Key': key,
     'X-RapidAPI-Host': 'instagram-bulk-profile-scrapper.p.rapidapi.com'
   }
 };

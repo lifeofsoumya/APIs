@@ -4,16 +4,11 @@ require('dotenv').config()
 const key = process.env.KEY
 const options = {
   method: 'GET',
-  url: 'https://alpha-vantage.p.rapidapi.com/query',
-  params: {
-    function: 'TIME_SERIES_DAILY',
-    symbol: 'tesla',
-    outputsize: 'compact',
-    datatype: 'json'
-  },
+  url: 'https://youtube-search-and-download.p.rapidapi.com/video/comments', // /playlist with id, params: {query: 'indGeek nodejs', hl: 'en', type: 'v', duration: 'l', sort: 'r'},
+  params: {id: 'aPHOWtFN1Cg'},
   headers: {
     'X-RapidAPI-Key': key,
-    'X-RapidAPI-Host': 'alpha-vantage.p.rapidapi.com'
+    'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
   }
 };
 

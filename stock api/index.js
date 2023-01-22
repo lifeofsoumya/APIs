@@ -1,11 +1,13 @@
 const axios = require("axios");
+require('dotenv').config()
 
+const key = process.env.KEY
 const options = {
   method: "GET",
   url: "https://yh-finance.p.rapidapi.com/auto-complete",
   params: { q: "tesla", region: "US" },
   headers: {
-    "X-RapidAPI-Key": "6d3f3b728amsh2d4bde72eb2b03ep1e50f9jsnafa25071e021",
+    "X-RapidAPI-Key": key,
     "X-RapidAPI-Host": "yh-finance.p.rapidapi.com"
   }
 };
