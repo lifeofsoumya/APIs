@@ -1,0 +1,14 @@
+GetSuggestedUser
+SearchFollowers
+SearchFollowing
+Followers
+Following
+GetUserStories
+MediaLikers
+UserInfo
+GetUserNameByUserId_v2
+Medias
+GetUserNameByUserId
+HashTagMedias
+MediaInfo
+MediaComments
